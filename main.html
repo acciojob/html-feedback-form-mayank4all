@@ -8,12 +8,12 @@
 
 <body>
 	<h1>Feedback Form</h1>
-	<form>
+	<form action="/submit" method="post">
 		<label for="name">Enter your name</label>
 		<input minlength="3" maxlength="50" required id="name" type="text" name="name" placeholder="Enter your name.">
 		<br><br>
 		<label for="portfolio">Enter your portfolio</label>
-		<input required id="portfolio" type="text" name="portfolio" placeholder="Enter your name.">
+		<input type="url" name="portfolio" required id="portfolio">
 		<br><br>
 		<label for="favColor">Enter your fav color</label>
 		<input type="color" name="favColor" id="favColor">
